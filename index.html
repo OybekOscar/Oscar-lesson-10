@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LESSON 10</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>User data</legend>
+        <form action="#" target="_blank_" autocomplete="off">
+          <div>
+            <label for="username">Username</label>
+            <input
+              required
+              aria-required
+              name="username"
+              placeholder="username"
+              id="username"
+              type="text"
+              list="names"
+              oninvalid="this.setCustomValidity('Username kiriting !')"
+            />
+            <datalist id="names">
+              <option value="Abdulaziz"></option>
+              <option value="Jahongir"></option>
+              <option value="Nodirbek"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="firstname">First name</label>
+            <input
+              name="firstname"
+              placeholder="first name"
+              id="firstname"
+              type="text"
+            />
+          </div>
+          <div>
+            <label for="phoneNumber">Phone number </label>
+            <input
+              name="phoneNumber"
+              value="+998"
+              pattern="^\+998(33|7(0|1|7)|88|9\d{1})(\d{7})$"
+              id="phoneNumber"
+              type="text"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              disabled
+              value="abdulaziz@gmail.com"
+              type="email"
+              id="email"
+            />
+          </div>
+          <div id="passwordBox">
+            <label for="password">Password</label>
+            <input name="password" type="password" id="password" />
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input name="price" type="range" id="price" />
+          </div>
+          <div>
+            <input type="time" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+              <option value="tash">Tashkent</option>
+              <option value="qash">Qashqadaryo</option>
+              <option value="sam">Samarqand</option>
+              <option value="and">Andijon</option>
+            </select>
+          </div>
+          <div>
+            <label for="desc">Description</label>
+            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <h2>Gender</h2>
+            <input required name="gender" id="male" type="radio" value="male" />
+            <label for="male">Male</label>
+            <br />
+            <input
+              required
+              name="gender"
+              id="female"
+              type="radio"
+              value="female"
+            />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <h2>Qaysi sohaga qiziqasiz ?</h2>
+            <input
+              name="field"
+              value="frontend"
+              id="frontend"
+              type="checkbox"
+            />
+            <label for="frontend">Frontend</label>
+            <br />
+            <input name="field" value="backend" id="backend" type="checkbox" />
+            <label for="backend">Backend</label>
+            <br />
+            <input name="field" value="go" id="go" type="checkbox" />
+            <label for="go">Go</label>
+            <br />
+          </div>
+          <!-- <input type="submit" value="Send" /> -->
+          <button type="submit">Send</button>
+        </form>
+      </fieldset>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

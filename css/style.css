@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ a{
+  list-style-type: none;
+  color: #ffff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border: 2px solid red;
+}
+
+input[type="text"]::placeholder {
+  color: green;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* input[type="checkbox"] {
+  border-radius: 50%;
+  border: 1px solid red;
+} */
+
+select {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  background: green;
+  color: white;
+}
+
+option {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: blue;
+}
+
+textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  max-height: 300px;
+  min-height: 200px;
+  resize: vertical;
+}
+
+fieldset {
+  padding: 15px;
+}
+
+legend {
+  font-size: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  background: red;
+  color: white;
+}
+
+
+input:disabled {
+  background-color: grey;
+  color: white;
+}
+
+#passwordBox {
+  position: relative;
+}
+
+#passwordBox i {
+  position: absolute;
+  top: 62px;
+  right: 10px;
+}
